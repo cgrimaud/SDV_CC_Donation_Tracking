@@ -1,0 +1,19 @@
+body {
+    background-color: #c5d7e1;
+}
+
+
+.navbar {
+    margin-bottom: 2em;
+    background-color: #ababad;
+}
+
+.accordion-group {
+    border-style: double;
+}
+
+.accordion {
+    border-style: solid;
+}
+
+
