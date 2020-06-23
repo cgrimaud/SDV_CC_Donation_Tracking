@@ -1,5 +1,4 @@
-[
-    
+[  
     {
         "id": 1,
         "name": "Crafts Room",
@@ -268,7 +267,6 @@
         "reward": "Bridge Repair",
         "completed": false
     },
-
     {
         "id": 2,
         "name": "Pantry",
@@ -576,7 +574,6 @@
         "reward": "Greenhouse",
         "completed": false
     },
-
     {									
         "id":	3,							
         "name":	"Fish Tank",							
@@ -966,8 +963,7 @@
                 ],							                                            
         "reward": "Minecarts Repaired",								
         "complete": false								
-    },
-    
+    },   
     {										
         "id":	5,								
         "name":	"Bulletin Board",								
@@ -1187,8 +1183,7 @@
                 ],                             
         "reward": "Friendship",								
         "complete": false								
-    },
-    
+    },   
     {										
         "id":	6,								
         "name":	"Vault",								
@@ -1214,7 +1209,7 @@
                     },						
                     {						
                         "id":	28,				
-                        "name":	"5,000 Bundle",				
+                        "name":	"5,000 Bundle",
                         "items":					
                                 [			
                                     {		
