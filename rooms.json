@@ -1,0 +1,1270 @@
+[
+    
+    {
+        "id": 1,
+        "name": "Crafts Room",
+        "bundles": 
+                [
+                    {
+                        "id": 1,
+                        "name": "Spring Foraging Bundle",
+                        "items": 
+                                [
+                                    {
+                                        "id":	1,
+                                        "name":	"Wild Horseradish",
+                                        "location":	"Spring Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },
+                                    {
+                                        "id":	2,
+                                        "name":	"Daffodil",
+                                        "location":	"Spring Foraging, buy from Pierre at Flower Dance",
+                                        "quantity":	1,
+                                        "completed": false                                            
+                                    },
+                                    {
+                                        "id":	3,
+                                        "name":	"Leek",
+                                        "location":	"Spring Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                        
+                                    }, 
+                                    {
+                                        "id":	4,
+                                        "name":	"Dandelion",
+                                        "location":	"Spring Foraging, buy from Pierre at Flower Dance",
+                                        "quantity":	1,
+                                        "completed": false
+                                        
+                                    }  
+                                ],
+                        "amtToComplete": 4,
+                        "reward": "Spring Seeds (30)",
+                        "completed": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Summer Foraging Bundle",
+                        "items": 
+                                [
+                                    {
+                                        "id":	5,
+                                        "name":	"Grape",
+                                        "location":	"Summer Foraging, Fall Farming",
+                                        "quantity":	1,
+                                        "completed": false
+                                        
+                                    },
+                                    {
+                                        "id":	6,
+                                        "name":	"Spice Berry",
+                                        "location":	"Summer Foraging, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false                                 
+                                    },
+                                    {
+                                        "id":	7,
+                                        "name":	"Sweet Pea",
+                                        "location":	"Summer Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }
+                                ],
+                        "amtToComplete": 3,
+                        "reward": "Summer Seeds (30)",
+                        "completed": false
+                    },
+                    {
+                        "id": 3,
+                        "name": "Fall Foraging Bundle",
+                        "items": 
+                                [
+                                    {
+                                        "id":	8,
+                                        "name":	"Common Mushroom",
+                                        "location":	"Fall Foraging, Spring & Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },
+                                    {
+                                        "id":	9,
+                                        "name":	"Wild Plum",
+                                        "location":	"Fall Foraging, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false                                       
+                                    },
+                                    {
+                                        "id":	10,
+                                        "name":	"Hazelnut",
+                                        "location":	"Fall Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }, 
+                                    {
+                                        "id":	11,
+                                        "name":	"Blackberry",
+                                        "location":	"Fall Foraging, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }  
+                                ],                        
+                        "amtToComplete": 4,
+                        "reward": "Fall Seeds (30)",
+                        "completed": false
+                    },
+                    {
+                        "id": 4,
+                        "name": "Winter Foraging Bundle",
+                        "items": 
+                                [
+                                    {
+                                        "id":	12,
+                                        "name":	"Winter Root",
+                                        "location":	"Tilling soil or Artifact Spots in Winter, dropped by Blue Slimes on floors 41-79 of The Mines",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },
+                                    {
+                                        "id":	13,
+                                        "name":	"Crystal Fruit",
+                                        "location":	"Winter Foraging, dropped by Dust Sprites on floors 41-79 of The Mines",
+                                        "quantity":	1,
+                                        "completed": false                                       
+                                    },
+                                    {
+                                        "id":	14,
+                                        "name":	"Snow Yam",
+                                        "location":	"Tilling soil or Artifact Spots in Winter",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }, 
+                                    {
+                                        "id":	15,
+                                        "name":	"Crocus",
+                                        "location":	"Winter Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }  
+                                ], 
+                        "amtToComplete": 4,
+                        "reward": "Winter Seeds (30)",
+                        "completed": false
+                    },
+                    {
+                        "id": 5,
+                        "name": "Construction Bundle",
+                        "items":
+                                [
+                                    {
+                                        "id":	16,
+                                        "name":	"Wood (99)",
+                                        "location":	"Chopping Trees or branches with an Axe",
+                                        "quantity":	99,
+                                        "completed": false
+                                    },
+                                    {
+                                        "id":	17,
+                                        "name":	 "Wood (99)",
+                                        "location":	"Chopping Trees or branches with an Axe",
+                                        "quantity":	99,
+                                        "completed": false                                    
+                                    },
+                                    {
+                                        "id":	18,
+                                        "name":	 "Stone (99)",
+                                        "location":	"Smashing stones with a Pickaxe",
+                                        "quantity":	99,
+                                        "completed": false
+                                    }, 
+                                    {
+                                        "id":	19,
+                                        "name":	 "Hardwood (10)",
+                                        "location":	"Chopping Large Stumps or Large Logs with an upgraded Axe, smashing crates in The Mines",
+                                        "quantity":	10,
+                                        "completed": false
+                                    }  
+                                ],  
+                        "amtToComplete": 4,
+                        "reward": "Charcoal Kiln (1)",
+                        "completed": false
+                    },
+                    {
+                        "id": 6,
+                        "name": "Exotic Foraging Bundle",
+                        "items": 
+                                [
+                                    {
+                                        "id":	20,
+                                        "name":	 "Coconut",
+                                        "location":	"Desert Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },
+                                    {
+                                        "id":	21,
+                                        "name":	 "Cactus Fruit",
+                                        "location":	"Desert Foraging",
+                                        "quantity":	1,
+                                        "completed": false                                           
+                                    },
+                                    {
+                                        "id":	22,
+                                        "name":	 "Cave Carrot",
+                                        "location":	"The Mines, either smashing boxes or tilling soil",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }, 
+                                    {
+                                        "id":	23,
+                                        "name":	 "Red Mushroom",
+                                        "location":	"Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree, Forest Farm Map in Fall.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },
+                                    {
+                                        "id":	24,
+                                        "name":	 "Purple Mushroom",
+                                        "location":	"The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },    
+                                    {
+                                        "id":	25,
+                                        "name":	 "Maple Syrup",
+                                        "location":	"Tapped Maple Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },    
+                                    {
+                                        "id":	26,
+                                        "name":	 "Oak Resin",
+                                        "location":	"Tapped Oak Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },    
+                                    {
+                                        "id":	27,
+                                        "name":	 "Pine Tar",
+                                        "location":	"Tapped Pine Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },    
+                                    {
+                                        "id":	28,
+                                        "name":	 "Morel",
+                                        "location":	"Foraging in the Secret Woods or Forest Farm Map in Spring, The Farm Cave (mushroom option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }    
+                                ], 
+                        "amtToComplete": 5,
+                        "reward": "Autumn's Bounty (5)",
+                        "completed": false
+                    }                   
+                ],
+        "reward": "Bridge Repair",
+        "completed": false
+    },
+
+    {
+        "id": 2,
+        "name": "Pantry",
+        "bundles": 
+                [
+                    {			
+                        "id": 7,
+                        "name":	"Spring Crops Bundle",	
+                        "items":
+                                [
+                                    {	
+                                        "id": 29,
+                                        "name":	 "Parsnip",
+                                        "location":	"Spring Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {
+                                        "id": 30,
+                                        "name":	 "Green Bean",
+                                        "location":	"Spring Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 31,
+                                        "name":	 "Cauliflower",
+                                        "location":	"Spring Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 32,
+                                        "name":	 "Potato",
+                                        "location":	"Spring Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }
+                                ],
+                        "amtToComplete": 4,	
+                        "reward": "Speed-Gro (20)",
+                        "completed": false		
+                    },			
+                    {			
+                        "id": 8,
+                        "name":	"Summer Crops Bundle",	
+                        "items":
+                                [	
+                                    {	
+                                        "id": 33,
+                                        "name":	 "Tomato",
+                                        "location":	"Summer Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 34,
+                                        "name":	 "Hot Pepper",
+                                        "location":	"Summer Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 35,
+                                        "name":	 "Blueberry",
+                                        "location":	"Summer Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 36,
+                                        "name":	 "Melon",
+                                        "location":	"Summer Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }
+                                ],
+                        "amtToComplete": 4,
+                        "reward": "Quality Sprinkler (1)",	
+                        "completed": false		
+                    },			
+                    {			
+                        "id": 9,	
+                        "name":	"Fall Crops Bundle",	
+                        "items":
+                                [	
+                                    {	
+                                        "id": 37,
+                                        "name":	 "Corn",
+                                        "location":	"Summer / Fall Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                    "id": 38,
+                                        "name":	 "Eggplant",
+                                        "location":	"Fall Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 39,
+                                        "name":	 "Pumpkin",
+                                        "location":	"Fall Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 40,
+                                        "name":	 "Yam",
+                                        "location":	"Fall Crops, dropped by Duggys on floors 6-29 of The Mines (3%)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }
+                                ],
+                        "amtToComplete": 4,
+                        "reward":	 "Bee House (1)",	
+                        "completed": false		
+                    },			
+                    {			
+                        "id": 10,	
+                        "name":	"Quality Crops Bundle",
+                        "items":			
+                                [
+                                    {	
+                                        "id": 41,
+                                        "name":	"Parsnip",
+                                        "location":	"Gold quality Spring Crops",
+                                        "quantity":	5,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 42,
+                                        "name":	"Melon",
+                                        "location":	"Gold quality Summer Crops",
+                                        "quantity":	5,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 43,
+                                        "name":	"Pumpkin",
+                                        "location":	"Gold quality Fall Crops",
+                                        "quantity":	5,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 44,
+                                        "name":	"Corn",
+                                        "location":	"Gold quality Summer / Fall Crops",
+                                        "quantity":	5,
+                                        "completed": false
+                                    }	
+                                ],
+                        "amtToComplete": 3,	
+                        "reward":	 "Preserves Jar (1)",		
+                        "completed": false		
+                    },			
+                    {			
+                        "id": 11,		
+                        "name":	"Animal Bundle",
+                        "items":			
+                                [	
+                                    {	
+                                        "id": 45,
+                                        "name":	 "Large Milk",
+                                        "location":	"Cows",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 46,
+                                        "name":	 "Large Egg (Brown)",
+                                        "location":	"Chickens",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 47,
+                                        "name":	 "Large Egg",
+                                        "location":	"Chickens",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 48,
+                                        "name":	 "Large Goat Milk",
+                                        "location":	"Goats",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 49,
+                                        "name":	 "Wool",
+                                        "location":	"Sheep, Rabbits",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 50,
+                                        "name":	 "Duck Egg",
+                                        "location":	"Ducks",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }	
+                                ],
+                        "amtToComplete": 5,
+                        "reward":	 "Cheese Press (1)",	
+                        "completed": false
+                    },			
+                    {			
+                        "id": 12,		
+                        "name":	"Artisan Bundle",		
+                        "items":			
+                                [	
+                                    {	
+                                        "id": 51,
+                                        "name":	 "Truffle Oil (1)",
+                                        "location":	"Made from Truffles using an Oil Maker",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 52,
+                                        "name":	 "Cloth",
+                                        "location":	"Loom, Recycling a Soggy Newspaper",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 53,
+                                        "name":	 "Goat Cheese",
+                                        "location":	"Cheese Press",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 54,
+                                        "name":	 "Cheese",
+                                        "location":	"Cheese Press",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 55,
+                                        "name":	 "Honey",
+                                        "location":	"Bee House, Oasis",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 56,
+                                        "name":	 "Jelly",
+                                        "location":	"Preserves Jar",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 57,
+                                        "name":	 "Apple",
+                                        "location":	"Apple Trees during Fall, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 58,
+                                        "name":	 "Apricot",
+                                        "location":	"Apricot Trees during Spring, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 59,
+                                        "name":	 "Orange",
+                                        "location":	"Orange Trees during Summer, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 60,
+                                        "name":	 "Peach",
+                                        "location":	"Peach Trees during Summer, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 61,
+                                        "name":	 "Pomegranate",
+                                        "location":	"Pomegranate Trees during Fall, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },	
+                                    {	
+                                        "id": 62,
+                                        "name":	 "Cherry",
+                                        "location":	"Cherry Trees during Spring, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }	
+                                ],
+                        "amtToComplete": 6,
+                        "reward": "Keg (1)",	
+                        "completed": false		
+                    }			                                          
+                ],
+        "reward": "Greenhouse",
+        "completed": false
+    },
+
+    {									
+        "id":	3,							
+        "name":	"Fish Tank",							
+        "bundles":			
+                [						
+                    {					
+                        "id":	13,			
+                        "name":	"River Fish Bundle",			
+                        "items":	
+                                [	
+                                    {		
+                                        "id":	63,
+                                        "name":	"Sunfish",
+                                        "location":	"Found in Rivers, 6am – 7pm, Spring, and Summer during sunny weather. Found in the Riverlands Farm or in the Wilderness Farm pond during rainy weather.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	64,
+                                        "name":	"Catfish",
+                                        "location":	"Found in Rivers and Secret Woods Pond 6am – midnight, Spring and Fall. Only when raining.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	65,
+                                        "name":	"Shad",
+                                        "location":	"Found in Rivers, 9am – 2am, Spring, Summer, and Fall. Only when raining.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	66,
+                                        "name":	"Tiger Trout",
+                                        "location":	"Found in Rivers, 6am – 7pm, Fall and Winter.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }
+                                ],
+                        "amtToComplete":	4,			
+                        "reward": "Bait (30)",			
+                        "completed": false
+                    },					
+                    {					
+                        "id":	14,			
+                        "name":	"Lake Fish Bundle",			
+                        "items":	
+                                [
+                                    {		
+                                        "id":	67,
+                                        "name":	"Largemouth Bass",
+                                        "location":	"Found in the Mountain lake, 6am – 7pm, All Seasons.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	68,
+                                        "name":	"Carp",
+                                        "location":	"Found in the Mountain lake, Anytime, during Summer, Spring, or Fall. Found in Cindersap Forest pond, Anytime, Spring, Summer, or Fall. Found in Secret Woods or Sewer, Anytime, All Seasons.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	69,
+                                        "name":	"Bullhead",
+                                        "location":	"Found in the Mountain Lake, Anytime, All Seasons.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	70,
+                                        "name":	"Sturgeon",
+                                        "location":	"Found in the Mountain Lake, 6am – 7pm, Summer and Winter.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],           
+                        "amtToComplete":	4,			
+                        "reward": "Dressed Spinner (1)",			
+                        "completed": false
+                    },					
+                    {					
+                        "id":	15,			
+                        "name":	"Ocean Fish Bundle",			
+                        "items":	
+                                [
+                                    {		
+                                        "id":	71,
+                                        "name":	"Sardine",
+                                        "location":	"Found in the Ocean, 6am – 7pm, Spring, Fall, and Winter.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	72,
+                                        "name":	"Tuna",
+                                        "location":	"Found in the Ocean, 6am – 7pm, Summer and Winter.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	73,
+                                        "name":	"Red Snapper",
+                                        "location":	"Found in the Ocean, 6am – 7pm, Summer and Fall. Only when raining.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	74,
+                                        "name":	"Tilapia",
+                                        "location":	"Found in the Ocean, 6am – 2pm, Summer and Fall.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }	
+                                ],
+                        "amtToComplete":	4,			
+                        "reward": "Warp Totem: Beach (5)",			
+                        "completed": false
+                    },					
+                    {					
+                        "id":	16,			
+                        "name":	"Night Fishing Bundle",			
+                        "items":				
+                                [		
+                                    {		
+                                        "id":	75,
+                                        "name":	"Walleye",
+                                        "location":	"Found in Rivers, Lakes and Forest Pond, 12pm – 2am, Fall. Only when raining.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	76,
+                                        "name":	"Bream",
+                                        "location":	"Found in Rivers, 6pm – 2am, All Seasons.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	77,
+                                        "name":	"Eel",
+                                        "location":	"Found in the Ocean, 4pm – 2am, Spring or Fall. Only when raining.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],	
+                        "amtToComplete":	3,			
+                        "reward": "Small Glow Ring (1)",			
+                        "completed": false
+                    },					
+                    {					
+                        "id":	17,			
+                        "name":	"Crab Pot Bundle",			
+                        "items":				
+                                [		
+                                    {		
+                                        "id":	78,
+                                        "name":	"Lobster",
+                                        "location":	"Caught in Crab Pots (ocean)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	79,
+                                        "name":	"Crayfish",
+                                        "location":	"Caught in Crab Pots (freshwater)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	80,
+                                        "name":	"Crab",
+                                        "location":	"Caught in Crab Pots (ocean), drops from Rock Crabs or Lava Crabs in The Mines",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	81,
+                                        "name":	"Cockle",
+                                        "location":	"Caught in Crab Pots (ocean), Beach Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	82,
+                                        "name":	"Mussel",
+                                        "location":	"Caught in Crab Pots (ocean), Beach Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	83,
+                                        "name":	"Shrimp",
+                                        "location":	"Caught in Crab Pots (ocean)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	84,
+                                        "name":	"Snail",
+                                        "location":	"Caught in Crab Pots (freshwater)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	85,
+                                        "name":	"Periwinkle",
+                                        "location":	"Caught in Crab Pots (freshwater)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	86,
+                                        "name":	"Oyster",
+                                        "location":	"Caught in Crab Pots (ocean), Beach Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	87,
+                                        "name":	"Clam",
+                                        "location":	"Caught in Crab Pots (ocean), Beach Foraging",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],	
+                        "amtToComplete":	5,			
+                        "reward": "Crab Pot (3)",			
+                        "completed": false
+                    },					
+                    {					
+                        "id":	18,			
+                        "name":	"Specialty Fish Bundle",			
+                        "items":				
+                                [		
+                                    {		
+                                        "id":	88,
+                                        "name":	"Pufferfish",
+                                        "location":	"Found in the Ocean, 12pm – 4pm, Summer during sunny weather.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	89,
+                                        "name":	"Ghostfish",
+                                        "location":	"Found in ponds in The Mines floors 20 and 60, Anytime, All Seasons. May also be dropped by Ghosts.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	90,
+                                        "name":	"Sandfish",
+                                        "location":	"Found in the pond in The Desert, 6am – 8pm, All Seasons.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	91,
+                                        "name":	"Woodskip",
+                                        "location":	"Found in the Secret Woods and the Forest Farm, Anytime, All Seasons.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],	
+                        "amtToComplete":	4,			
+                        "reward": "Dish o' The Sea (5)",			
+                        "completed": false
+                    }					
+                ],										
+        "reward": "Glittering Boulder Removed",							
+        "complete": false
+
+    },
+    
+    {										
+        "id":	4,								
+        "name":	"Boiler Room",								
+        "bundles":									
+                [							
+                    {						
+                        "id":	19,				
+                        "name":	"Blacksmith Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	92,
+                                        "name":	"Copper Bar",
+                                        "location":	"Smelting Copper Ore in the Furnace",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	93,
+                                        "name":	"Iron Bar",
+                                        "location":	"Smelting Iron Ore in the Furnace, Crafting the \"Transmute (Fe)\" recipe",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	94,
+                                        "name":	"Gold Bar",
+                                        "location":	"Smelting Gold Ore in the Furnace, Crafting the \"Transmute (Au)\" recipe",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],	                                            
+                        "amtToComplete":	3,				
+                        "reward":	"Furnace (1)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	20,				
+                        "name":	"Geologist's Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	95,
+                                        "name":	"Quartz",
+                                        "location":	"Foraging on all floors of The Mines",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	96,
+                                        "name":	"Earth Crystal",
+                                        "location":	"Foraging on floors 1-39 of The Mines, Geodes, Omni Geodes, drop from Duggies in the Mines (floors 1-29)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	97,
+                                        "name":	"Frozen Tear",
+                                        "location":	"Foraging on floors 40-79 of The Mines, Frozen Geodes, Omni Geodes, drop from Dust Sprites in the Mines (floors 40-80)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	98,
+                                        "name":	"Fire Quartz",
+                                        "location":	"Foraging on floors 80-120 of The Mines, Magma Geodes, Omni Geodes",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],                                            
+                        "amtToComplete":	4,				
+                        "reward":	"Omni Geode (5)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	21,				
+                        "name":	"Adventurer's Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	99,
+                                        "name":	"Slime (99)",
+                                        "location":	"Dropped by Slimes",
+                                        "quantity":	99,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	100,
+                                        "name":	"Bat Wing (10)",
+                                        "location":	"Dropped by Bats in The Mines",
+                                        "quantity":	10,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	101,
+                                        "name":	" Solar Essence",
+                                        "location":	"Dropped by Ghosts, Squid Kids, or Metal Heads in The Mines, dropped by Mummies in the Skull Cavern",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	102,
+                                        "name":	"Void Essence",
+                                        "location":	"Dropped by Shadow Brutes in The Mines or Serpents in the Skull Cavern",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],                                           
+                        "amtToComplete":	2,				
+                        "reward":	"Small Magnet Ring (1)",				
+                        "completed": false				
+                    }						
+                ],							                                            
+        "reward": "Minecarts Repaired",								
+        "complete": false								
+    },
+    
+    {										
+        "id":	5,								
+        "name":	"Bulletin Board",								
+        "bundles":									
+                [							
+                    {						
+                        "id":	22,				
+                        "name":	"Chef's Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	103,
+                                        "name":	"Maple Syrup",
+                                        "location":	"Tapped Maple Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	104,
+                                        "name":	"Fiddlehead Fern",
+                                        "location":	"Summer Foraging in the Secret Woods",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	105,
+                                        "name":	"Truffle",
+                                        "location":	"Pigs",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	106,
+                                        "name":	"Poppy",
+                                        "location":	"Summer Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	107,
+                                        "name":	"Maki Roll",
+                                        "location":	"Cooking (recipe sources: The Queen of Sauce, The Saloon)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	108,
+                                        "name":	"Fried Egg",
+                                        "location":	"Cooking",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],                                          
+                        "amtToComplete":	6,				
+                        "reward":	"Pink Cake (3)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	23,				
+                        "name":	"Dye Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	109,
+                                        "name":	"Red Mushroom",
+                                        "location":	"Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	110,
+                                        "name":	"Sea Urchin",
+                                        "location":	"Beach Foraging, after using 300 wood to fix the bridge to the right side of the beach",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	111,
+                                        "name":	" Sunflower",
+                                        "location":	"Summer / Fall Crops",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	112,
+                                        "name":	"Duck Feather",
+                                        "location":	"Ducks",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	113,
+                                        "name":	"Aquamarine",
+                                        "location":	"Aquamarine Nodes, boxes in The Mines, Fishing Treasure Chests",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	114,
+                                        "name":	"Red Cabbage",
+                                        "location":	"Summer Crops (Red Cabbage Seeds are available at Pierre's General Store in year 2+)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],                                            
+                        "amtToComplete":	6,				
+                        "reward":	"Seed Maker (1)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	24,				
+                        "name":	"Field Research Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	115,
+                                        "name":	"Purple Mushroom",
+                                        "location":	"The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	116,
+                                        "name":	"Nautilus Shell",
+                                        "location":	"Winter Beach Foraging (Note: NOT the Nautilus Fossil artifact)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	117,
+                                        "name":	"Chub",
+                                        "location":	"Can be found in the mountain lake and river during all seasons, any time.",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	118,
+                                        "name":	"Frozen Geode",
+                                        "location":	"The Mines floors 40-79",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],                                            
+                        "amtToComplete":	4,				
+                        "reward":	"Recycling Machine (1)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	25,				
+                        "name":	"Fodder Bundle",				
+                        "items":					                           				
+                                [			
+                                    {		
+                                        "id":	119,
+                                        "name":	"Wheat (10)",
+                                        "location":	"Summer / Fall Crops",
+                                        "quantity":	10,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	120,
+                                        "name":	"Hay (10)",
+                                        "location":	"Purchase at Marnie's Ranch or Desert Trader, or harvest from Grass or Wheat.",
+                                        "quantity":	10,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	121,
+                                        "name":	"Apple (3)",
+                                        "location":	"Apple Trees during Fall, The Farm Cave (fruit bat option)",
+                                        "quantity":	3,
+                                        "completed": false
+                                    }		
+                                ],		                            				
+                        "amtToComplete":	3,				
+                        "reward":	"Heater (1)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	26,				
+                        "name":	"Enchanter's Bundle",				
+                        "items":				                           				
+                                [			
+                                    {		
+                                        "id":	122,
+                                        "name":	"Oak Resin",
+                                        "location":	"Tapped Oak Tree",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	123,
+                                        "name":	"Wine",
+                                        "location":	"Keg",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	124,
+                                        "name":	"Rabbit's Foot",
+                                        "location":	"Rabbits, Serpent drop in Skull Cavern (0.8%)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    },		
+                                    {		
+                                        "id":	125,
+                                        "name":	"Pomegranate",
+                                        "location":	"Pomegranate Trees during Fall, The Farm Cave (fruit bat option)",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],                            				
+                        "amtToComplete":	4,				
+                        "reward":	" Gold Bar (5)",				
+                        "completed": false				
+                    }						
+                ],                             
+        "reward": "Friendship",								
+        "complete": false								
+    },
+    
+    {										
+        "id":	6,								
+        "name":	"Vault",								
+        "bundles":			
+                [							
+                    {						
+                        "id":	27,				
+                        "name":	"2,500 Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	126,
+                                        "name":	"2,500g",
+                                        "location":	"Purchase bundle for this amount",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],			
+                                            
+                        "amtToComplete":	1,				
+                        "reward":	"Chocolate Cake (3)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	28,				
+                        "name":	"5,000 Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	127,
+                                        "name":	"5,000g",
+                                        "location":	"Purchase bundle for this amount",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }	
+                                ],			
+                        "amtToComplete":	1,				
+                        "reward":	"Quality Fertilizer (30)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	29,				
+                        "name":	"10,000 Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	128,
+                                        "name":	"10,000g",
+                                        "location":	"Purchase bundle for this amount",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }	
+                                ],			
+                        "amtToComplete":	1,				
+                        "reward":	"Lightning Rod (1)",				
+                        "completed": false				
+                    },						
+                    {						
+                        "id":	30,				
+                        "name":	"25,000 Bundle",				
+                        "items":					
+                                [			
+                                    {		
+                                        "id":	129,
+                                        "name":	"25,000g",
+                                        "location":	"Purchase bundle for this amount",
+                                        "quantity":	1,
+                                        "completed": false
+                                    }		
+                                ],		
+                        "amtToComplete":	1,				
+                        "reward":	"Crystalarium (1)",				
+                        "completed": false				
+                    }						
+                ],						                                          
+        "reward": "Bus Repair",								
+        "complete": false								
+    }										
+]
