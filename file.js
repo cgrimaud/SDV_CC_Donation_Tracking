@@ -1,15 +1,10 @@
 
 
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function () {
-    if(xhr.readyState === 4) {
-        // const rooms = JSON.parse(xhr.responseText);
-        console.log(typeof xhr.responseText)
-        }
-}
+// fetch('rooms.json')
+//     .then(response => response.json())
+//     .then(data => console.log(data))
 
-
-xhr.open('GET', 'rooms.json');
-xhr.send();
-
-
+$.getJSON("rooms.json", function( data ) {
+    rooms = data
+    console.log(rooms)
+})
