@@ -21,15 +21,17 @@ $(document).ready( function () {
 
     function createItemRows(listOfItems){
         listOfItems.forEach(item => buildItemRow(item))
+
+        
     }
 
     function buildItemRow(item){
-        let row = `<tr>
+        let row = `<tr style="background-color: #ffcb68",>
                     <td class="checkbox" align="center">
                         <input type="checkbox">                                
                     </td>
                     <td><img src="${item.image}" alt="${item.name}" title="${item.name}"</td>
-                    <td data-toggle="popover">${item.name}</td>
+                    <td data-toggle="popover" style="color:blue">${item.name}</td>
                     <td>${item.bundle}</td>
                     <td>${item.room}</td>
                 </tr>`
@@ -45,6 +47,15 @@ $(document).ready( function () {
         });
 
     }
+
+    // filter table search
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#master_table tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    
 
     
 

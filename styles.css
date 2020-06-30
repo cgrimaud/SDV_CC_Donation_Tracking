@@ -1,9 +1,9 @@
-/* body {
+body {
     background: black url(https://stardewvalleywiki.com/mediawiki/skins/Vector/stardewimages/stardewbackground.png)no-repeat fixed center center / cover;
-    opacity: 0.1;
-}  */
+} 
 
-/* body::before {    
+/* 
+body::before {    
     content: "";
     background-image: url('https://stardewvalleywiki.com/mediawiki/skins/Vector/stardewimages/stardewbackground.png');
     background-size: cover;
@@ -20,12 +20,17 @@
     background-color: #ababad;
 }
 
+#myInput {
+    width: 25%;
+}
+
 #table_div {
     border: 20px;
 }
 
+
 .table-responsive {
-    max-height:550px;
+    max-height: 600px;
 }
 
 .row { 
@@ -34,8 +39,11 @@
 
 thead th { 
     position: sticky; top: 0; 
-    background-color: darkgrey;
+    background-color: #945f4e;
 }
 
+.d-flex {
+    margin-bottom: 2%;
+}
 
 
