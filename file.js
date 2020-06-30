@@ -13,33 +13,70 @@ $(document).ready( function () {
         let rooms = await loadJSON;
         getAllRooms(rooms);
         initTable()
-        }
+        // createTableRows(items);
+    }
 
 
     init()
 
     // dataTable function that populates table rows on webpage
     function initTable() {
-        $('#table_id').DataTable( {
-
+        $('#table_id').dataTable( {
+            select: true,
+            scrollX: true,
+            scrollY: "550px",
+            scrollCollapse: true,
+            paging: false,
             data: items,
             columns: [
-                {data: 'completed'},
+                {data: 'completed'}, 
                 {data: 'name'},
                 {data: 'location'},
                 {data: 'bundle'},
                 {data: 'room'}
-            ]
+            ],
+            columnDefs: [
+                {"className": "dt-center", "targets": "_all"}
+            ],
+            
         })
+
+        let completedColumn = $("tr td:nth-child(1)")
+        completedColumn.replaceWith('<th style="text-align: center"><input type="checkbox" class:"checkbox" /></th>')
+
+        let itemColumn = $("tr td:nth-child(2)")
+        var popover = itemColumn.attr({"data-toggle":"popover"})
+        $('[data-toggle="popover"]').popover({
+            placement : 'right',
+            trigger: 'click',
+            title: 'Location',
+            content: "loading text..."
+        });
+        function addLocationTextToPopover() { 
+            itemColumn.on({
+                'mouseenter': function(){
+                        var txt = $(this).html();
+                        let getItemObject = items.find(item => item.name === txt)
+                        var locationText = getItemObject.location
+                        itemColumn.attr({"data-content": locationText})  
+                }
+            });
+        }
+        
+
+
+        addLocationTextToPopover()
+        
     }
         
     class Item {
-        constructor(completed, item, location, bundle, room) {
+        constructor(completed, item, location, bundle, room, id) {
             this.completed = completed
             this.name = item;
             this.location = location;
             this.bundle = bundle;
             this.room = room;
+            this.id = id
         }
     };
 
@@ -60,8 +97,9 @@ $(document).ready( function () {
 
     // creates a new instance of an Item and adds it to the items array
     function createItemObject(room, bundle, item) {
-        itemObject = new Item(item.completed, item.name, item.location, bundle.name, room.name, )
+        itemObject = new Item(item.completed, item.name, item.location, bundle.name, room.name, item.id)
         items.push(itemObject)
     };
+    
 
 });
