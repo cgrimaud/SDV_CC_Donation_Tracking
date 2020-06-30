@@ -25,15 +25,28 @@ $(document).ready( function () {
 
     function buildItemRow(item){
         let row = `<tr>
-                    <td>${item.completed}</td>
-                    <td><img src="${item.image}" alt="${item.name}"</td>
-                    <td>${item.name}</td>
+                    <td class="checkbox" align="center">
+                        <input type="checkbox">                                
+                    </td>
+                    <td><img src="${item.image}" alt="${item.name}" title="${item.name}"</td>
+                    <td data-toggle="popover">${item.name}</td>
                     <td>${item.bundle}</td>
                     <td>${item.room}</td>
                 </tr>`
 
         $('#tableRows').append(row)
+
+        // enable popover and assign item.location as the content
+        $('[data-toggle="popover"]').popover({
+            placement : 'right',
+            trigger: 'click',
+            title: 'Location',
+            content: `${item.location}`
+        });
+
     }
+
+    
 
 
         
