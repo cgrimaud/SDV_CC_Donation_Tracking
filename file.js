@@ -31,12 +31,12 @@ $(document).ready( function () {
             columns: [
                 {data: 'completed'}, 
                 {data: 'name'},
-                {data: 'location'},
                 {data: 'bundle'},
                 {data: 'room'}
             ],
             columnDefs: [
-                {"className": "dt-center", "targets": "_all"}
+                {"className": "dt-center", "targets": "_all"},
+                { width: '5%', targets: 0 },
             ],
             
         })
@@ -70,13 +70,13 @@ $(document).ready( function () {
     }
         
     class Item {
-        constructor(completed, item, location, bundle, room, id) {
+        constructor(completed, item, bundle, room, id, location) {
             this.completed = completed
             this.name = item;
-            this.location = location;
             this.bundle = bundle;
             this.room = room;
-            this.id = id
+            this.id = id;
+            this.location = location;
         }
     };
 
@@ -97,7 +97,7 @@ $(document).ready( function () {
 
     // creates a new instance of an Item and adds it to the items array
     function createItemObject(room, bundle, item) {
-        itemObject = new Item(item.completed, item.name, item.location, bundle.name, room.name, item.id)
+        itemObject = new Item(item.completed, item.name, bundle.name, room.name, item.id, item.location)
         items.push(itemObject)
     };
     
