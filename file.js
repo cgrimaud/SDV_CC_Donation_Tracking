@@ -51,7 +51,7 @@ $(document).ready( function () {
     // filter table search
     $("#myInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
-        $("#master_table tr").filter(function() {
+        $("#master_table tbody tr").filter(function() {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
