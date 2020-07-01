@@ -3,7 +3,7 @@ $(document).ready( function () {
     // will be populated with instances of Item 
     let items = []
 
-    // assigning .getJSON method to a variable to be called in async init
+    // assigning .getJSON method to a variable to be called in async init function
     var loadJSON = $.getJSON("rooms.json", function (data){
         return data
     })
@@ -11,18 +11,15 @@ $(document).ready( function () {
     // async function so loadJSON can be completed before the rest of the functions run
     async function init(){
         let rooms = await loadJSON;
-        getAllRooms(rooms);
+        parseAllRooms(rooms);
         createItemRows(items);
-
     }
 
 
     init()
 
     function createItemRows(listOfItems){
-        listOfItems.forEach(item => buildItemRow(item))
-
-        
+        listOfItems.forEach(item => buildItemRow(item))   
     }
 
     function buildItemRow(item){
@@ -45,10 +42,9 @@ $(document).ready( function () {
             title: 'Location',
             content: `${item.location}`
         });
-
     }
 
-    // filter table search
+    // filter table search field functionality
     $("#myInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
         $("#master_table tbody tr").filter(function() {
@@ -56,10 +52,13 @@ $(document).ready( function () {
         });
     });
     
+    $('input[type="checkbox"]').click( function(){
+        if ($(this).prop("checked") == true){
+            console.log("horray!")
+        }
+    })
 
     
-
-
         
     class Item {
         constructor(completed, image, item, bundle, room, id, location) {
@@ -75,18 +74,18 @@ $(document).ready( function () {
 
     ////// FUNCTIONS TO PARSE THE ARRAY OF ROOM OBJECTS TO CREATE ARRAY OF ITEM OBJECTS ////////
 
-    // iterates over the array of Community Center Room objects, and passes each room object to the getAllBundles function
-    function getAllRooms (roomObject) {
-        roomObject.forEach( room => getAllBundles(room))
+    // iterates over the array of Community Center Room objects, and passes each room object to the parseAllBundles function
+    function parseAllRooms (roomObject) {
+        roomObject.forEach( room => parseAllBundles(room))
     };
 
-    // iterates over the Bundle objects inside of a single Room object and passes the room and bundle to getAllItems function
-    function getAllBundles (room) {
-        room.bundles.forEach( bundle => getAllItems(room, bundle))
+    // iterates over the Bundle objects inside of a single Room object and passes the room and bundle to parseAllItems function
+    function parseAllBundles (room) {
+        room.bundles.forEach( bundle => parseAllItems(room, bundle))
     };
 
     // iterates over the Item objects inside of a single bundle associated with a single room and passes the room, bundle, and item to createItemObject
-    function getAllItems(room, bundle) {
+    function parseAllItems(room, bundle) {
         bundle.items.forEach(item => createItemObject(room, bundle, item))
     };
 
@@ -101,72 +100,5 @@ $(document).ready( function () {
 
 
 
-    // // dataTable function that populates table rows on webpage
-    // function initTable() {
-    //     var table = $('#table_id').dataTable( {
-    //                 select: true,
-    //                 scrollY: "550px",
-    //                 scrollCollapse: true,
-    //                 paging: false,
-    //                 data: items,
-    //                 columns: [
-    //                     {data: 'completed'}, 
-    //                     {data: 'image',
-    //                     render: function(data, type, row) {
-    //                         return '<img src="'+data+'" />';
-    //                         }
-    //                     },
-    //                     {data: 'name'},
-    //                     {data: 'bundle'},
-    //                     {data: 'room'}
-    //                 ],
-    //                 columnDefs: [
-    //                     {"className": "dt-center", "targets": "_all"},
-    //                 ],
-                    
-    //             })
-    //     // access Completed Column, then replace text with checkboxes
-    //     let completedColumn = $("tr td:nth-child(1)")
-    //     completedColumn.replaceWith('<th style="text-align: center"><input type="checkbox" class:"checkbox" /></th>')
-
-    //     // access item column, then add popover functionality to those items
-    //     let itemColumn = $("tr td:nth-child(3)")
-    //     var popover = itemColumn.attr({"data-toggle":"popover"})
-    //     $('[data-toggle="popover"]').popover({
-    //         placement : 'right',
-    //         trigger: 'click',
-    //         title: 'Location',
-    //         content: "loading text..."
-    //     });
-    //     // popover will dynamically provide specific location information for each item
-    //     function addLocationTextToPopover() { 
-    //         itemColumn.on({
-    //             'mouseenter': function(){
-    //                     var txt = $(this).html();
-    //                     // mouseenter receives the item text then we loop through items array to find matching item
-    //                     let getItemObject = items.find(item => item.name === txt)
-    //                     // access the location attribute of the item object and assign it to locationText
-    //                     var locationText = getItemObject.location
-    //                     // add the data-content attribute to the items in item column, with locationText as value
-    //                     itemColumn.attr({"data-content": locationText})  
-    //             }
-    //         });
-    //     }
-        
-    //     addLocationTextToPopover()
-
-
-    //     $("#hide").click(function() {
-    //         if ($('input[type=checkbox]').attr('checked')){
-                
-    //         }
-            
-    //     });    
-    //     $("#show").click(function() {
-    //         $.fn.dataTable.ext.search.pop();
-    //         table.ajax.reload();
-    //     });
-        
-    // }
 
 

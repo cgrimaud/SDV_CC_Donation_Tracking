@@ -23,6 +23,9 @@ body::before {
 #myInput {
     width: 25%;
 }
+.btn {
+    width: 25%
+}
 
 #table_div {
     border: 20px;
