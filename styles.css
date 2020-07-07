@@ -2,19 +2,6 @@ body {
     background: black url(https://stardewvalleywiki.com/mediawiki/skins/Vector/stardewimages/stardewbackground.png)no-repeat fixed center center / cover;
 } 
 
-/* 
-body::before {    
-    content: "";
-    background-image: url('https://stardewvalleywiki.com/mediawiki/skins/Vector/stardewimages/stardewbackground.png');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.5;
-} */
-
 .navbar {
     margin-bottom: 2em;
     background-color: #ababad;
@@ -22,9 +9,6 @@ body::before {
 
 #myInput {
     width: 25%;
-}
-.btn {
-    width: 25%
 }
 
 #table_div {

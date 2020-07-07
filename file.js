@@ -8,58 +8,7 @@ $(document).ready( function () {
         return data
     })
 
-    // async function so loadJSON can be completed before the rest of the functions run
-    async function init(){
-        let rooms = await loadJSON;
-        parseAllRooms(rooms);
-        createItemRows(items);
-    }
-
-
-    init()
-
-    function createItemRows(listOfItems){
-        listOfItems.forEach(item => buildItemRow(item))   
-    }
-
-    function buildItemRow(item){
-        let row = `<tr style="background-color: #ffcb68",>
-                    <td class="checkbox" align="center">
-                        <input type="checkbox">                                
-                    </td>
-                    <td><img src="${item.image}" alt="${item.name}" title="${item.name}"</td>
-                    <td data-toggle="popover" style="color:blue">${item.name}</td>
-                    <td>${item.bundle}</td>
-                    <td>${item.room}</td>
-                </tr>`
-
-        $('#tableRows').append(row)
-
-        // enable popover and assign item.location as the content
-        $('[data-toggle="popover"]').popover({
-            placement : 'right',
-            trigger: 'click',
-            title: 'Location',
-            content: `${item.location}`
-        });
-    }
-
-    // filter table search field functionality
-    $("#myInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#master_table tbody tr").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
-    
-    $('input[type="checkbox"]').click( function(){
-        if ($(this).prop("checked") == true){
-            console.log("horray!")
-        }
-    })
-
-    
-        
+            
     class Item {
         constructor(completed, image, item, bundle, room, id, location) {
             this.completed = completed
@@ -95,6 +44,75 @@ $(document).ready( function () {
         items.push(itemObject)
     };
     
+
+
+
+    function createItemRows(listOfItems){
+        // if local storage has rows, populate based on that
+        if (localStorage.getItem('rows')) {
+            $('#tableRows').html(localStorage.getItem('rows'));
+
+            // enable popover on item cells
+            $('[data-toggle="popover"]').popover({
+            placement : 'right',
+            trigger: 'click'
+            });
+        // otherwise, build the rows from scratch
+        } else {
+            listOfItems.forEach(item => buildItemRow(item))  
+        } 
+
+        $('input[type="checkbox"]').click( function(){
+            if ($(this).prop("checked") == true){
+                let row = this.closest("tr")
+                $(row).detach()  
+            }
+            // saves table rows to local storage
+            var rows = $('#tableRows').html();
+            localStorage.setItem("rows", rows);
+        })
+
+        
+    }
+
+    function buildItemRow(item){
+        let row = `<tr id="${item.id}" style="background-color: #ffcb68">
+                        <td class="checkbox" align="center">
+                            <input type="checkbox">                                
+                        </td>
+                        <td><img src="${item.image}" alt="${item.name}" title="${item.name}"</td>
+                        <td data-toggle="popover" title="Location" data-content="${item.location}" style="color:blue">${item.name}</td>
+                        <td>${item.bundle}</td>
+                        <td>${item.room}</td>
+                    </tr>`
+
+        $('#tableRows').append(row)
+
+        // enable popover on Item cells
+        $('[data-toggle="popover"]').popover({
+            placement : 'right',
+            trigger: 'click'
+        });
+    }
+
+    // filter table search field functionality
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        var row = $("#master_table tbody tr")
+        row.filter(function() {    
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+
+    // async function so loadJSON can be completed before the rest of the functions run
+    async function init(){
+        let rooms = await loadJSON;
+        parseAllRooms(rooms);
+        createItemRows(items);
+    }
+
+    init()
 
 });
 
