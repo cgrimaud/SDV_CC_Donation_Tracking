@@ -25,27 +25,28 @@ $(document).ready( function () {
 
     // iterates over the array of Community Center Room objects, and passes each room object to the parseAllBundles function
     function parseAllRooms (roomObject) {
-        roomObject.forEach( room => parseAllBundles(room))
+        roomObject.forEach( room => parseBundlesInRoom(room))
     };
 
     // iterates over the Bundle objects inside of a single Room object and passes the room and bundle to parseAllItems function
-    function parseAllBundles (room) {
-        room.bundles.forEach( bundle => parseAllItems(room, bundle))
+    function parseBundlesInRoom (room) {
+        room.bundles.forEach( bundle => parseItemsInBundle(room, bundle))
     };
 
     // iterates over the Item objects inside of a single bundle associated with a single room and passes the room, bundle, and item to createItemObject
-    function parseAllItems(room, bundle) {
-        bundle.items.forEach(item => createItemObject(room, bundle, item))
+    // pushes each item returend to items array
+    function parseItemsInBundle(room, bundle) {
+        bundle.items.forEach(item => items.push(createItemObject(room, bundle, item)))
     };
 
-    // creates a new instance of an Item and adds it to the items array
+    // creates a new instance of an Item and returns it to ParseAllItems
     function createItemObject(room, bundle, item) {
         itemObject = new Item(item.completed, item.image, item.name, bundle.name, room.name, item.id, item.location)
-        items.push(itemObject)
+        return itemObject
     };
     
 
-
+    ////// FUNCTIONS TO CREATE TABLE OF ITEMS ////////
 
     function createItemRows(listOfItems){
         // if local storage has rows, populate based on that
@@ -57,7 +58,7 @@ $(document).ready( function () {
             placement : 'right',
             trigger: 'click'
             });
-        // otherwise, build the rows from scratch
+        // otherwise, build the rows from scratch using buildItemRow function
         } else {
             listOfItems.forEach(item => buildItemRow(item))  
         } 
@@ -94,6 +95,8 @@ $(document).ready( function () {
         });
     }
 
+    ////// ADDITIONAL TABLE FUNCTIONALITY ////////
+
     // filter table search field functionality
     $("#myInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
@@ -117,7 +120,7 @@ $(document).ready( function () {
         createItemRows(items);
     }
 
-    // init function called so table can load
+    // init function called so table can load onto page
     init()
 
 });
