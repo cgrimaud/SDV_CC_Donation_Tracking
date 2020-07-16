@@ -103,6 +103,7 @@ $(document).ready( function () {
         });
     });
 
+    // clear localStorage to reset the table. 
     $("#reset").click(function() {
         localStorage.clear();
         location.reload(true);
@@ -116,6 +117,7 @@ $(document).ready( function () {
         createItemRows(items);
     }
 
+    // init function called so table can load
     init()
 
 });
