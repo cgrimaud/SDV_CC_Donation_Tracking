@@ -71,7 +71,6 @@ $(document).ready( function () {
             var rows = $('#tableRows').html();
             localStorage.setItem("rows", rows);
         })
-
         
     }
 
@@ -102,6 +101,11 @@ $(document).ready( function () {
         row.filter(function() {    
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
+    });
+
+    $("#reset").click(function() {
+        localStorage.clear();
+        location.reload(true);
     });
 
 
