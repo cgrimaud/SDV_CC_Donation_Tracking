@@ -6,7 +6,7 @@ This website contains a dynamically generated table of the different items that 
 
 ## To run the website:
 
-The website is hosted on GitHub pages, so the easiest way to review it would be to [check it out here.](). 
+The website is hosted on GitHub pages, so the easiest way to review it would be to [check it out here.](https://cgrimaud.github.io/SDV_CC_Donation_Tracking/). 
 
 #### If you want to download and test locally:
 
