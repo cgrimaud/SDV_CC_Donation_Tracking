@@ -35,6 +35,8 @@ The website uses the localStorage property so if you leave (or refresh) the page
 
 ## CL Requirements Met:
 
+#### 5+ Commits on Github
+
 #### Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
 
 It [reads](https://github.com/cgrimaud/SDV_CC_Donation_Tracking/blob/e5ed99e0ac758887671af96e1287791773259baa/file.js#L6-L9) the local [rooms.json](https://github.com/cgrimaud/SDV_CC_Donation_Tracking/blob/e5ed99e0ac758887671af96e1287791773259baa/rooms.json) file and [parses](https://github.com/cgrimaud/SDV_CC_Donation_Tracking/blob/e5ed99e0ac758887671af96e1287791773259baa/file.js#L24-L46) it to create an array of Item objects.
